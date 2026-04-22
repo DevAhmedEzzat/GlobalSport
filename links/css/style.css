@@ -1107,6 +1107,46 @@ footer {
   /* Responsive tweaks */
   @media (max-width: 900px) {
     
+    .hero { padding: 0 1.5rem 4rem; }
+    .hero-stats { display: none; }
+    .hero h1 { font-size: clamp(3.5rem, 16vw, 7rem); }
+    .hero-sub { flex-direction: column; align-items: flex-start; }
+    .section, .process-section, .sports-section, .features-section,
+    .testimonials, .contact-section { padding: 4rem 1.5rem; }
+    .services-grid { grid-template-columns: 1fr; }
+    .sports-header{
+      flex-direction: column;
+    }
+    .process-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .sports-row { 
+      background: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 5px;
+      padding: 10px 0;
+      scroll-snap-type: x mandatory; 
+      }
+    .sport-icon-wrap{ display: none; }  
+    .sport-tile {
+      width: 100%;
+      aspect-ratio: 1; 
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      padding: 20px 0;
+      scroll-snap-type: x mandatory;
+      display: flex;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      justify-content: center;
+      }
+    .features-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .features-cta { grid-column: span 1; flex-direction: column; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .contact-section { grid-template-columns: 1fr; gap: 3rem; }
+    footer { flex-direction: column; align-items: flex-start; gap: 1rem; }
+    .form-row { grid-template-columns: 1fr; }
   }
 
 /* animaction*/
